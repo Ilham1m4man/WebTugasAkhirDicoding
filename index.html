@@ -14,26 +14,26 @@
     <!-- HEADER SECTION -->
     <header>
         <nav>
+            <a class="namaWeb" href="#main">All About Rockets</a>
             <ul>
-                <li><a href="#main">All About Rockets</a></li>
                 <li><a href="#rocket">Roket</a></li>
                 <li><a href="#family">Keluarga</a></li>
                 <li><a href="#engine">Mesin</a></li>
             </ul>
         </nav>
-        <img src="assets/gambar/roket/BlueOrigin_BE4_hotfire.jpg">
         <div class="container" id="main">
-            <h1>All About Rockets</h1>
-            <p>Ulasan mendetail tentang dunia peroketan yang dikemas secara sederhana</p>
+            <img src="assets/gambar/roket/BlueOrigin_BE4_hotfire.jpg">
+            <h1 style="font-size: 4rem;">All About Rockets</h1>
+            <p style="font-size: 1.25rem">Ulasan mendetail tentang dunia peroketan yang dikemas secara sederhana</p>
         </div>
     </header>
     <!-- MAIN SECTION -->
     <main>
-        <div id="content">
+        <div id="content" >
             <!-- ARTICLE 1 -->
-            <article id="rocket">
+            <article id="rocket" class="card">
                 <h2>Apa itu Roket?</h2>
-                <img src="assets/gambar/roket/kolaseRoket.png" alt="Roket">
+                <img src="assets/gambar/roket/kolaseRoket.png" alt="Roket" class="featured-image">
                 <p>
                     Sebelum kita membahas tentang roket, sebaiknya kita mengetahui apa yang membuat roket dapat bekerja.
                     Roket bekerja dengan memanfaatkan <strong>Hukum Gerak Newton yang ke-3</strong> yang berbunyi:
@@ -90,18 +90,18 @@
                     <strong>Hukum Gerak Newton ke-3</strong> maka pengeluaran gas tersebut akan diikuti dengan
                     <strong>gaya reaksi</strong> yang arahnya berlawanan
                     (ke atas). Jadi sederhananya semua roket berpropelan cair bekerja seperti berikut:
-                    <img src="assets/gambar/Mesin/mesin_roket.png" alt="mesin roket">
                 <ol>
                     <li>Menampung propelan pada tangki terpisah</li>
                     <li>Mengalirkan dan menyemprotkan propelan menggunakan pump ke combustion chamber</li>
                     <li>Terjadi reaksi kimia yang menghasilkan gas panas dan energi besar</li>
                     <li>Mengeluarkan gas panas melalui throat dan nozzle</li>
                 </ol>
-                <a href="https://youtu.be/Owji-ukVt9M">Informasi lebih detailnya di sini</a>
+                <a href="https://youtu.be/Owji-ukVt9M">(Informasi lebih detailnya di sini)</a>
+                <img src="assets/gambar/Mesin/mesin_roket.png" alt="mesin roket" class="featured-image">
                 </p>
             </article>
             <!-- ARTICLE 2 -->
-            <article id="family">
+            <article id="family" class="card">
                 <h2>Keluarga Roket</h2>
                 <p>
                     Yup, tidak hanya makhluk hidup saja yang mempunyai keluarga, roketpun memilikinya namun di sini kita
@@ -112,14 +112,16 @@
                     namun jika kamu ingin informasi lebih, silahkan klik <a href="https://en.wikipedia.org/wiki/Comparison_of_orbital_launch_systems#:~:text=Orbital%20launch%20systems%20are%20rockets,engines%20on%20their%20first%20stage."></a>link
                     ini.</a>
                 <h3>1. Delta</h3>
-                <figure>
-                    <img src="assets/gambar/roket/Thor_Delta.jpg">
-                    <figcaption>Thor-Delta</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/gambar/roket/Thor_Delta_B.png">
-                    <figcaption>Delta B</figcaption>
-                </figure>
+                <div class="image_container">
+                    <figure>
+                        <img src="assets/gambar/roket/Thor_Delta.jpg" class="contoh_image">
+                        <figcaption>Thor-Delta</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/gambar/roket/Thor_Delta_B.png" class="contoh_image">
+                        <figcaption>Delta B</figcaption>
+                    </figure>
+                </div>
                 <p>
                     Delta adalah keluarga sistem peluncuran expendable (habis pakai) serbaguna Amerika yang telah
                     menyediakan kemampuan peluncuran luar angkasa di Amerika Serikat sejak 1960. Jepang juga meluncurkan
@@ -138,14 +140,16 @@
                     keseluruhan roket ini dinamakan sebagai <strong>Roket Delta</strong>. Pada masanya, Roket Thor-Delta
                     melakukan 12 peluncuran dengan 1 kali gagal.
                 </p>
-                <figure>
-                    <img src="assets/gambar/roket/Delta_N6.jpg">
-                    <figcaption>Thor-Delta</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/gambar/roket/Delta 0100-series.png">
-                    <figcaption>Delta 0100-series</figcaption>
-                </figure>
+                <div class="image_container">
+                    <figure>
+                        <img src="assets/gambar/roket/Delta_N6.jpg" class="contoh_image">
+                        <figcaption>Thor-Delta</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/gambar/roket/Delta 0100-series.png" class="contoh_image_long">
+                        <figcaption>Delta 0100-series</figcaption>
+                    </figure>
+                </div>
                 <p>
                     Pada saat itu, Roket Delta mengalami peningkatan performa dan memperbanyak variasi sesuai kebutuhan
                     payload. Nama variasinya yaitu Delta A, Delta B, ..., Delta G, kemudian Delta J, Delta K, ..., Delta
@@ -162,22 +166,23 @@
                     Booster Core. Keluarga Roket Delta akan berakhir pada tahun 2024 dan akan digantikan
                     dengan keluarga roket baru yaitu Vulcan.
                 </p>
-                <figure>
-                    <img src="assets/gambar/roket/Delta_II.jpg">
-                    <figcaption>Delta II</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/gambar/roket/delta IV medium.jpg">
-                    <figcaption>Delta IV Medium</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/gambar/roket/delta IV heavy.jpg">
-                    <figcaption>Delta IV Heavy</figcaption>
-                </figure>
+                <div class="image_container">
+                    <figure>
+                        <img src="assets/gambar/roket/Delta_II.jpg" class="contoh_image">
+                        <figcaption>Delta II</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/gambar/roket/delta IV medium.jpg" class="contoh_image">
+                        <figcaption>Delta IV Medium</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/gambar/roket/delta IV heavy.jpg" class="contoh_image">
+                        <figcaption>Delta IV Heavy</figcaption>
+                    </figure>
+                </div>
                 <h3>2. Falcon</h3>
                 <figure>
-                    <img src="assets/gambar/roket/Falcon_rocket_family.svg">
-                    <figcaption>Keluarga Roket Falcon</figcaption>
+                    <img src="assets/gambar/roket/Falcon_rocket_family.svg" class="featured-image" style="background-color: white;">
                 </figure>
                 <p>
                     <a href="https://en.wikipedia.org/wiki/SpaceX_launch_vehicles">Keluarga Roket Falcon</a> merupakan
@@ -198,10 +203,12 @@
                     dinonaktifkan dari layanan,
                     SpaceX menyatakan “Kami tidak dapat membuat Falcon 1 berfungsi sebagai bisnis.”
                 </p>
-                <figure>
-                    <img src="assets/gambar/roket/Falcon_1.jpg">
-                    <figcaption>Roket Falcon 1 pada peluncuran ke-4</figcaption>
-                </figure>
+                <div class="image_container">
+                    <figure>
+                        <img src="assets/gambar/roket/Falcon_1.jpg" class="contoh_image" style="max-width: 300px;">
+                        <figcaption>Roket Falcon 1 pada peluncuran ke-4</figcaption>
+                    </figure>
+                </div>
                 <p>
                     Saat Falcon 1 masih dalam masa aktifnya, SpaceX juga melakukan pengembangan roket penerus dari
                     Falcon 1 yaitu Falcon 5 dan Falcon 9. Pada tahun 2006, SpaceX menyatakan bahwa Falcon 5 adalah
@@ -215,14 +222,16 @@
                     Falcon 9 v1.1 beroperasi dari tahun 2013-2016, yang kemudian digantikan oleh Falcon 9 v1.2 (Full
                     Thrust).
                 </p>
-                <figure>
-                    <img src="assets/gambar/roket/Falcon_9_v1.1.jpg">
-                    <figcaption>Roket Falcon 9 v1.1</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/gambar/roket/CRS-6_first_stage_booster_landing_attempt.jpg">
-                    <figcaption>Roket Falcon 9 v1.1 mencoba mendarat di atas drone ship (gagal)</figcaption>
-                </figure>
+                <div class="image_container">
+                    <figure>
+                        <img src="assets/gambar/roket/Falcon_9_v1.1.jpg" class="contoh_image">
+                        <figcaption>Roket Falcon 9 v1.1</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/gambar/roket/CRS-6_first_stage_booster_landing_attempt.jpg" class="contoh_image">
+                        <figcaption>Roket Falcon 9 v1.1 mencoba mendarat di atas drone ship (gagal)</figcaption>
+                    </figure>
+                </div>
                 <p>
                     Falcon 9 Full Thrust juga dikenal sebagai Falcon 9 v1.2, memiliki varian Blok 1 hingga Blok 5 yang
                     dirancang dan diproduksi oleh SpaceX. Dirancang pada 2014-2015, Falcon 9 Full Thrust mulai
@@ -239,22 +248,24 @@
                     memiliki kemampuan luar biasa dan jauh lebih hebat dari Falcon 9 itu sendiri, yaitu Starship dan
                     Super Heavy Booster.
                 </p>
-                <figure>
-                    <img src="assets/gambar/roket/Falcon 9 Block 5.png">
-                    <figcaption>Roket Falcon 9 Block 5</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/gambar/roket/Falcon 9 landing.png">
-                    <figcaption>Falcon 9 Block 5 landing</figcaption>
-                </figure>
-                <figure>
-                    <img src="assets/gambar/roket/Starship Super Heavy.jpg">
-                    <figcaption>Fully Stacked Starship and Super Heavy Booster</figcaption>
-                </figure>
+                <div class="image_container">
+                    <figure>
+                        <img src="assets/gambar/roket/Falcon 9 Block 5.png" class="contoh_image">
+                        <figcaption>Roket Falcon 9 Block 5</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/gambar/roket/Falcon 9 landing.png" class="contoh_image">
+                        <figcaption>Falcon 9 Block 5 landing</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="assets/gambar/roket/Starship Super Heavy.jpg" class="contoh_image">
+                        <figcaption>Fully Stacked Starship and Super Heavy Booster</figcaption>
+                    </figure>
+                </div>
                 <h3>3. Keluarga Roket Ariane</h3>
                 <figure>
-                    <img src="assets/gambar/roket/ariane rocket family.jpg">
-                    <figcaption>Keluarga Roket Ariane (kiri ke kanan: Ariane 1, 2, 3, 4, 5, 6)</figcaption>
+                    <img src="assets/gambar/roket/ariane rocket family.jpg" class="featured-image">
+                    <figcaption style="text-align: center;">Keluarga Roket Ariane (kiri ke kanan: Ariane 1, 2, 3, 4, 5, 6)</figcaption>
                 </figure>
                 <p>
                     Ariane adalah serangkaian kendaraan peluncuran sipil Eropa untuk penggunaan peluncuran luar angkasa.
@@ -278,10 +289,12 @@
                     solid booster, dua booster cair, dan 44L memiliki empat booster berbahan bakar cair. Untuk informasi
                     lebih jelasnya ada <a href="https://en.wikipedia.org/wiki/Ariane_(rocket_family)">di sini!</a>
                 </p>
-                <figure>
-                    <img src="assets/gambar/roket/Ariane4.jpg">
-                    <figcaption>Ariane 4</figcaption>
-                </figure>
+                <div class="image_container">
+                    <figure>
+                        <img src="assets/gambar/roket/Ariane4.jpg" class="contoh_image">
+                        <figcaption>Ariane 4</figcaption>
+                    </figure>
+                </div>
                 <p>
                     Ariane 5 merupakan desain ulang yang hampir menyeluruh dari Ariane 1-4. Dua tahap bawah hipergolik
                     diganti dengan satu tahap inti LH2/LOX. Hal ini menyederhanakan tumpukan stage roketnya, penggunaan
@@ -295,138 +308,144 @@
                     Ariane 5 masih beroperasi sampai sekarang dan memiliki beberapa <a href="https://en.wikipedia.org/wiki/Ariane_5">varian</a>. Namun saat ini, ArianeGroup sedang
                     melakukan pengembangan Ariane 6 sebagai penerus dari Ariane 5.
                 </p>
-                <figure>
-                    <img src="assets/gambar/roket/ariane 5.jpg">
-                    <figcaption>Ariane 5</figcaption>
-                </figure>
+                <div class="image_container">
+                    <figure>
+                        <img src="assets/gambar/roket/ariane 5.jpg" class="contoh_image">
+                        <figcaption>Ariane 5</figcaption>
+                    </figure>
+                </div>
                 </p>
             </article>
             <!-- ROCKET ENGINE SECTION -->
             <section id="engine">
                 <h2>Mesin Roket</h2>
                 <div class="slide-wrap">
-                    <a href="">1</a>
-                    <a href="">2</a>
+                    <a href="#satu">1</a>
+                    <a href="#dua">2</a>
 
                     <div class="slider">
-                        <div class="slide" id="slide-1">
-                            <img src="assets/gambar/Mesin/RS68.jpg">
-                            <div class="container">
-                                <h4><b>RS-68</b></h4>
-                                <table>
-                                    <tr>
-                                        <th>Propelan</th>
-                                        <td>LOX/Liquid Hidrogen</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Daya dorong (di permukaan laut)</th>
-                                        <td>660,000 lbf (2,950 kN)</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Digunakan pada roket</th>
-                                        <td>Delta IV</td>
-                                    </tr>
-                                </table>
+                        <div class="group_slide" id="satu">
+                            <div class="slide" id="slide-1">
+                                <img src="assets/gambar/Mesin/RS68.jpg">
+                                <div class="container">
+                                    <h4><b>RS-68</b></h4>
+                                    <table>
+                                        <tr>
+                                            <th>Propelan</th>
+                                            <td>LOX/Liquid Hidrogen</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Daya dorong (di permukaan laut)</th>
+                                            <td>660,000 lbf (2,950 kN)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Digunakan pada roket</th>
+                                            <td>Delta IV</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="slide" id="slide-2">
+                                <img src="assets/gambar/Mesin/Merlin_1D.jpg">
+                                <div class="container">
+                                    <h4><b>Merlin 1D</b></h4>
+                                    <table>
+                                        <tr>
+                                            <th>Propelan</th>
+                                            <td>LOX/RP-1</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Daya dorong (di permukaan laut)</th>
+                                            <td>192,000 lbf (854 kN)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Digunakan pada roket</th>
+                                            <td>Falcon 9 FT</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="slide" id="slide-3">
+                                <img src="assets/gambar/Mesin/Raptor 2 engine.jpg">
+                                <div class="container">
+                                    <h4><b>Raptor 2</b></h4>
+                                    <table>
+                                        <tr>
+                                            <th>Propelan</th>
+                                            <td>LOX/Liquid Methane</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Daya dorong (di permukaan laut)</th>
+                                            <td>510,000 lbf (2.3 MN)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Digunakan pada roket</th>
+                                            <td>Starship & Super Heavy Booster</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
-                        <div class="slide" id="slide-2">
-                            <img src="assets/gambar/Mesin/Merlin_1D.jpg">
-                            <div class="container">
-                                <h4><b>Merlin 1D</b></h4>
-                                <table>
-                                    <tr>
-                                        <th>Propelan</th>
-                                        <td>LOX/RP-1</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Daya dorong (di permukaan laut)</th>
-                                        <td>192,000 lbf (854 kN)</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Digunakan pada roket</th>
-                                        <td>Falcon 9 FT</td>
-                                    </tr>
-                                </table>
+                        <div class="group_slide" id="dua">
+                            <div class="slide" id="slide-4">
+                                <img src="assets/gambar/Mesin/RD180.jpg">
+                                <div class="container">
+                                    <h4><b>RD-180</b></h4>
+                                    <table>
+                                        <tr>
+                                            <th>Propelan</th>
+                                            <td>LOX/RP-1</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Daya dorong (di permukaan laut)</th>
+                                            <td>860,000 lbf (3.83 MN)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Digunakan pada roket</th>
+                                            <td>Keluarga Roket Atlas</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
-                        </div>
-                        <div class="slide" id="slide-3">
-                            <img src="assets/gambar/Mesin/Raptor 2 engine.jpg">
-                            <div class="container">
-                                <h4><b>Raptor 2</b></h4>
-                                <table>
-                                    <tr>
-                                        <th>Propelan</th>
-                                        <td>LOX/Liquid Methane</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Daya dorong (di permukaan laut)</th>
-                                        <td>510,000 lbf (2.3 MN)</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Digunakan pada roket</th>
-                                        <td>Starship & Super Heavy Booster</td>
-                                    </tr>
-                                </table>
+                            <div class="slide" id="slide-5">
+                                <img src="assets/gambar/Mesin/BE4.jpg">
+                                <div class="container">
+                                    <h4><b>BE-4</b></h4>
+                                    <table>
+                                        <tr>
+                                            <th>Propelan</th>
+                                            <td>LOX/Liquid Methane</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Daya dorong (di permukaan laut)</th>
+                                            <td>540,000 lbf (2.4 MN)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Digunakan pada roket</th>
+                                            <td>Vulcan dan New Glenn</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
-                        </div>
-                        <div class="slide" id="slide-4">
-                            <img src="assets/gambar/Mesin/RD180.jpg">
-                            <div class="container">
-                                <h4><b>RD-180</b></h4>
-                                <table>
-                                    <tr>
-                                        <th>Propelan</th>
-                                        <td>LOX/RP-1</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Daya dorong (di permukaan laut)</th>
-                                        <td>860,000 lbf (3.83 MN)</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Digunakan pada roket</th>
-                                        <td>Keluarga Roket Atlas</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="slide" id="slide-5">
-                            <img src="assets/gambar/Mesin/BE4.jpg">
-                            <div class="container">
-                                <h4><b>BE-4</b></h4>
-                                <table>
-                                    <tr>
-                                        <th>Propelan</th>
-                                        <td>LOX/Liquid Methane</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Daya dorong (di permukaan laut)</th>
-                                        <td>540,000 lbf (2.4 MN)</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Digunakan pada roket</th>
-                                        <td>Vulcan dan New Glenn</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="slide" id="slide-6">
-                            <img src="assets/gambar/Mesin/Vulcain_2.1.jpg">
-                            <div class="container">
-                                <h4><b>Vulcain</b></h4>
-                                <table>
-                                    <tr>
-                                        <th>Propelan</th>
-                                        <td>LOX/Liquid Hidrogen</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Daya dorong (di permukaan laut)</th>
-                                        <td>308,213 lbf (1,371 kN)</td>
-                                    </tr>
-                                    <tr>
-                                        <th>Digunakan pada roket</th>
-                                        <td>Ariane 5 dan Ariane 6</td>
-                                    </tr>
-                                </table>
+                            <div class="slide" id="slide-6">
+                                <img src="assets/gambar/Mesin/Vulcain_2.1.jpg">
+                                <div class="container">
+                                    <h4><b>Vulcain 2.1</b></h4>
+                                    <table>
+                                        <tr>
+                                            <th>Propelan</th>
+                                            <td>LOX/Liquid Hidrogen</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Daya dorong (di permukaan laut)</th>
+                                            <td>308,213 lbf (1,371 kN)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Digunakan pada roket</th>
+                                            <td>Ariane 5 dan Ariane 6</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -443,7 +462,6 @@
                     </figure>
                 </header>
                 <section>
-                    <h3>Informasi Lainnya</h3>
                     <table>
                         <tr>
                             <th>Nama</th>

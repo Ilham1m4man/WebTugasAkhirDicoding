@@ -1,6 +1,173 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-body {
-    font-family: 'Roboto';
+:root {
+    --bg-color-card: rgb(22, 24, 26);
+    --white-font-color: white;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: var(--white-font-color);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(253, 189, 136);
+}
+
+nav {
+    z-index: 1000;
+    position: fixed;
+    background: rgba(29, 28, 29, 0.178);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.02);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(7px);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    padding-left: 15em;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 2em;
+}
+
+nav a {
+    color: var(--white-font-color);
+    text-transform: uppercase;
+}
+
+.namaWeb {
+    font-weight: var(--font-weight-bold);
+    padding: 0 20px 0 20px;
+    font-size: 1.25em;
+    text-align: center;
+    white-space: nowrap;
+}
+
+header {
+    display: inline;
+}
+
+header .container {
+    width: 100%;
+    background-color: var(--bg-color-card);
+    color: var(--white-font-color);
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+header .container img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container p {
+    font-weight: var(--font-weight-light);
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 50px;
+    text-align: justify;
+}
+
+.featured-image {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image_container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contoh_image {
+    flex-grow: 1;
+    height: 100%;
+    max-width: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contoh_image_long {
+    flex-grow: 1;
+    height: 100%;
+    max-width: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+figcaption {
+    font-weight: var(--font-weight-light);
+}
+
+#engine {
+    border: 5px solid white;
+    overflow: auto;
+}
+
+table {
+    text-align: left;
+    border: 1px solid red;
+}
+
+.slide {
+    float: left;
+    width: 400px;
+    margin-right: 50px;
+    border: 2px solid green;
+    overflow: auto;
+}
+
+.slide img {
+    float: left;
+    height: 100%;
+    max-width: 200px;
+    width: 55%;
+    left: 0;
+}
+
+.slide .container {
+    width: 200px;
+    width: 45%;
+    float: right;
+}
+
+main {
+    padding: 20px;
+}
+
+h4 {
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+ 
