@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 :root {
-    --bg-color-card: rgb(22, 24, 26);
-    --white-font-color: white;
+    --bg-color-darkgrey: rgba(28, 28, 28, 255);
+    --pr-font-color: white;
+    --sc-font-color: rgb(255, 150, 30);
+    --link-font-color: rgb(255, 200, 155);
     --font-weight-light: 300;
     --font-weight-regular: 400;
     --font-weight-bold: 700;
@@ -12,15 +14,19 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: black;
-    color: var(--white-font-color);
+    color: var(--pr-font-color);
 }
 
 a {
     text-decoration: none;
-    color: rgb(253, 189, 136);
+    color: var(--link-font-color);
 }
 
 nav {
@@ -35,28 +41,33 @@ nav {
     left: 0;
     display: flex;
     align-items: center;
+    justify-content:space-between;
     width: 100%;
-}
-
-nav ul {
-    padding-left: 15em;
+    font-size: larger;
 }
 
 nav li {
     display: inline;
     list-style-type: none;
-    margin-right: 2em;
+    margin-right: 4em;
+    padding: 0.25em 1em;
+}
+
+nav li:hover {
+    background: var(--sc-font-color);
+    border-radius: 50px;
+    transition: 0.5s;
 }
 
 nav a {
-    color: var(--white-font-color);
+    color: var(--pr-font-color);
     text-transform: uppercase;
 }
 
 .namaWeb {
     font-weight: var(--font-weight-bold);
-    padding: 0 20px 0 20px;
-    font-size: 1.25em;
+    padding: 0 70px;
+    font-size: 1.5em;
     text-align: center;
     white-space: nowrap;
 }
@@ -67,8 +78,8 @@ header {
 
 header .container {
     width: 100%;
-    background-color: var(--bg-color-card);
-    color: var(--white-font-color);
+    background-color: var(--bg-color-darkgrey);
+    color: var(--pr-font-color);
     text-align: center;
     border-radius: 0 0 20px 20px;
     padding-bottom: 20px;
@@ -80,6 +91,15 @@ header .container img {
     max-height: 500px;
     object-fit: cover;
     object-position: center;
+}
+
+blockquote {
+    color: var(--sc-font-color);
+    background-color: rgba(230, 217, 209, 0.13);
+    padding: 10px;
+    border-left: 3px solid var(--sc-font-color);
+    font-size: large;
+    font-style: italic;
 }
 
 .container p {
@@ -126,37 +146,122 @@ header .container img {
 
 figcaption {
     font-weight: var(--font-weight-light);
+    font-size: small;
 }
 
 #engine {
-    border: 5px solid white;
+    border-radius: 10px;
     overflow: auto;
+    background-color: var(--sc-font-color);
+    box-shadow: 4px 4px 8px 0 rgb(50,50,50);
+}
+
+#engine > h2 {
+    padding-left: 20px;
 }
 
 table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid rgb(165, 165, 165);
+    border-top: none;
+    border-left: none;
+    border-right: none;
     text-align: left;
-    border: 1px solid red;
+    padding: 8px 0;
+    font-size: small;
+    line-height: 20px;
+}
+
+th {
+    color: var(--sc-font-color);
+    padding-right: 30px;
+}
+
+.slide-wrap {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background: var(--sc-font-color);
+}
+
+.slide-wrap a {
+    padding: 10px;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slider::-webkit-scrollbar {
+    width: 10px;
+    height: 15px;
+}
+
+.slider::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.slider::-webkit-scrollbar-thumb:active {
+    background: var(--link-font-color);
+}
+
+.slider::-webkit-scrollbar-track {
+    background: rgb(141, 140, 140);
+}
+
+.slider > .group_slide {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    border-radius: 15px;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: tranform 0.5s;
+    position: relative;
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container {
+    border-left: none;
 }
 
 .slide {
     float: left;
-    width: 400px;
-    margin-right: 50px;
-    border: 2px solid green;
-    overflow: auto;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color-darkgrey);
+    border-radius: 15px;
+    box-shadow: -5px 4px 20px 0px rgba(79,79,79,1);
+    padding-bottom: 10px;
 }
 
 .slide img {
     float: left;
-    height: 100%;
-    max-width: 200px;
-    width: 55%;
-    left: 0;
+    width: 30%;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    padding: 5px;
+    margin: 5px;
 }
 
-.slide .container {
-    width: 200px;
-    width: 45%;
+.slide table {
+    width: 100%;
     float: right;
 }
 
@@ -166,8 +271,100 @@ main {
 
 h4 {
     font-size: 1.5rem;
-    padding: 0;
     margin: 0;
+    padding-bottom: 10px;
 }
 
- 
+aside {
+    display: flex;
+    justify-content: center;
+}
+
+.profile {
+    max-width: 800px;
+    border-radius: 25px;
+    padding: 30px 50px;
+    padding-top: 0;
+    background: rgb(50,50,50);
+    background: linear-gradient(0deg, rgba(50,50,50,1) 44%, rgba(148,148,148,1) 100%);
+}
+
+.profile h2 {
+    border-bottom: 5px solid var(--sc-font-color);
+    padding-bottom: 10px;
+    font-size: 2em;
+}
+
+.profile header {
+    text-align: center;
+    
+}
+
+.profile figure {
+    padding-top: 20px;
+}
+
+.profile img {
+    background: rgb(94,94,94);
+    background: linear-gradient(270deg, rgba(94,94,94,1) 0%, rgba(255,255,255,1) 100%);
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.profile th {
+    border-bottom: none;
+    padding-left: 5px;
+    font-size: medium;
+    border-left: 5px solid var(--sc-font-color);
+    font-size: large;
+    font-weight: var(--font-weight-bold);
+}
+
+.profile td {
+    border-bottom: none;
+    padding-left: 5px;
+    font-size: medium;
+    padding-left: 25px;
+    font-weight: var(--font-weight-light);
+}
+
+.banner_ft {
+    background-color: var(--sc-font-color);
+    font-size: 1.5em;
+    border: 1px solid rgb(148, 148, 148);
+    padding-left: 100px;
+    width: 100%;
+}
+
+.banner_ft ul {
+    padding: 0;
+}
+
+.banner_ft li {
+    list-style: none;
+    line-height: 2em;
+    width: 150px;
+}
+
+.banner_ft a:active {
+    color: var(--pr-font-color);
+}
+
+.banner_ft a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.banner_ft h5 {
+    font-size: larger;
+}
+
+.banner_ft img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    padding-right: 10px;
+}
